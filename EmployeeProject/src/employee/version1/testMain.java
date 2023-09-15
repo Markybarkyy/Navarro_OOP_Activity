@@ -1,0 +1,93 @@
+package employee.version1;
+
+public class testMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyDate date1 = new MyDate(30,02,2012);
+        MyDate date2 = new MyDate(30,05,2002);
+        System.out.println("\n\n\nHOURLY EMPLOYEES:");
+        HourlyEmployee employee1 = new HourlyEmployee();
+        HourlyEmployee employee2 = new HourlyEmployee(7306389, "Mark Navarro", date1, date2, 50, 1000);
+        HourlyEmployee employee3 = new HourlyEmployee(7306396, "Ken Navarro", date1, date2);
+        employee1.setEmpID(38193641);
+        employee1.setEmpName("Sharon Navarro");
+        employee1.setEmpDateHired(date1);
+        employee1.setEmpBirthDate(date2);
+        employee1.setTotalHoursWorked(40);
+        employee1.setRatePerHour(1000);
+        System.out.println(employee1);
+        System.out.println("\n\n\n:");
+        employee1.displayInfo();
+        System.out.println(employee2);
+        System.out.println("\n\n\n");
+        employee2.displayInfo();
+        System.out.println(employee3);
+        employee3.setTotalHoursWorked(40);
+        employee3.setRatePerHour(1000);
+        System.out.println("\n\n\n");
+        employee3.displayInfo();
+        System.out.println("\n\n\n\nPIECE WORKER EMPLOYEES:");
+        PieceWorkerEmployee employeeA = new PieceWorkerEmployee();
+        PieceWorkerEmployee EmpB = new PieceWorkerEmployee(128938172, "Mark Navarro", date1, date2, 50, 1000);
+        PieceWorkerEmployee employeeC = new PieceWorkerEmployee(23676127, "Ken Navarro", date1, date2);
+        employeeA.setEmpID(123711);
+        employeeA.setEmpName("Sharon Navarro");
+        employeeA.setEmpDateHired(date1);
+        employeeA.setEmpBirthDate(date2);
+        employeeA.setTotalPiecesFinished(100);
+        employeeA.setRatePerPiece(1000);
+        System.out.println(employeeA);
+        System.out.println("\n\n\n");
+        employeeA.displayInfo();
+        System.out.println(EmpB);
+        System.out.println("\n\n\n");
+        EmpB.displayInfo();
+        employeeC.setTotalPiecesFinished(50);
+        employeeC.setRatePerPiece(1000);
+        System.out.println(employeeC);
+        System.out.println("\n\n\n");
+        employeeC.displayInfo();
+        System.out.println("\n\n\n\nCOMMISSION");
+        CommissionEmployee employeeA1 = new CommissionEmployee();
+        CommissionEmployee EmpB1 = new CommissionEmployee(7306389, "Mark Navarro", date1, date2, 50000);
+        CommissionEmployee employeeC1 = new CommissionEmployee(7306396, "Ken Navarro", date1, date2);
+        employeeA1.setEmpID(491372);
+        employeeA1.setEmpName("Sharon Navarro");
+        employeeA1.setEmpDateHired(date1);
+        employeeA1.setEmpBirthDate(date2);
+        employeeA1.setTotalSales(20000);
+        System.out.println(employeeA1);
+        System.out.println("\n\n\n");
+        employeeA1.displayInfo();
+        System.out.println(EmpB1);
+        System.out.println("\n\n\n");
+        EmpB1.displayInfo();
+        employeeC1.setTotalSales(500000);
+        System.out.println(employeeC1);
+        System.out.println("\n\n\n");
+        employeeC1.displayInfo();
+        System.out.println("\n\n\n\nBASE PLUS COMMISSION");
+        BasePlusCommissionEmployee employeeA2 = new BasePlusCommissionEmployee();
+        BasePlusCommissionEmployee EmpB2 = new BasePlusCommissionEmployee(1823781, "Mark Navarro", date1, date2, 50000, 25000);
+        BasePlusCommissionEmployee employeeC2 = new BasePlusCommissionEmployee(1241, "Ken Navarro", date1, date2);
+        employeeA2.setEmpID(991242);
+        employeeA2.setEmpName("Sharon Navarro");
+        employeeA2.setEmpDateHired(date1);
+        employeeA2.setEmpBirthDate(date2);
+        employeeA2.setTotalSales(2000);
+        employeeA2.setBaseSalary(300000);
+        System.out.println(employeeA2);
+        System.out.println("\n\n\n");
+        employeeA2.displayInfo();
+        System.out.println(EmpB2);
+        System.out.println("\n\n\n");
+        EmpB2.displayInfo();
+        employeeC2.setTotalSales(50);
+        employeeC2.setBaseSalary(450000);
+        System.out.println(employeeC2);
+        System.out.println("\n\n\n");
+        employeeC2.displayInfo();
+	}
+
+}
